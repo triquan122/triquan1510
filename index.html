@@ -658,7 +658,9 @@
     <a href="#news">最新消息</a>
     <a href="#contact">聯絡我們</a>
   </nav>
-
+  <div> 
+   
+    </div>
   <!-- Hero -->
   <div class="hero" id="home">
     <video class="bg-video" autoplay muted loop playsinline>
@@ -709,8 +711,6 @@
       </div>
       <button class="gallery-btn next" onclick="scrollGallery(1)">›</button>
       </div>
-      <button class="gallery-btn next" onclick="scrollGallery(1)">›</button>
-    </div>
   </section>
 
   <!-- Activities Carousel -->
@@ -747,10 +747,15 @@
           <div class="activity-card-content">
             <h3>校園舞台表演</h3>
             <p>結合音樂、舞蹈與創意演出，展現學生多元才華與青春活力。從傳統到現代，精彩紛呈。</p>
+            <div class="tech-tags">
+          <span class="tech-tag">🎤 多元表演形式</span>
+              <span class="tech-tag">🎨 學生自主創作</span>
+              <span class="tech-tag">🔥 青春活力展現</span>
+         </div>
             <button class="view-more-btn">查看更多</button>
           </div>
         </div>
-
+         
         <!-- Card 3: 課外活動、旅遊 -->
         <div class="activity-card">
           <div class="activity-card-image">
@@ -759,6 +764,12 @@
           <div class="activity-card-content">
             <h3>課外活動、旅遊</h3>
             <p>組織豐富多彩的課外活動與教育旅行，探索台灣美景，拓展學生視野，增進團隊合作精神。</p>
+            <div class="tech-tags">
+          <span class="tech-tag">🚌 課外活動、旅遊</span>
+              <span class="tech-tag">🏞️ 校外參訪體驗</span>
+              <span class="tech-tag">✈️ 多元旅遊學習</span>
+              
+         </div>
             <button class="view-more-btn">查看更多</button>
           </div>
         </div>
@@ -774,7 +785,7 @@
     <!-- Performance Photo Gallery (10 ảnh) -->
     <h3 style="margin-top: 80px; font-size: 2rem; color: rgb(250, 252, 253);">相片集</h3>
     
-    <div class="performance-gallery">
+    <div class="performance-gallery" id="gallery"></div>
       <img src="https://scontent.fkhh2-1.fna.fbcdn.net/v/t39.30808-6/571281578_1356701086466313_6362901166286052890_n.jpg?stp=c448.0.1152.1152a_dst-jpg_s552x414_tt6&_nc_cat=100&ccb=1-7&_nc_sid=714c7a&_nc_ohc=p-QjJIUe0EcQ7kNvwHzADm9&_nc_oc=AdlDvDYE93OibxvHGDcPQtwXl1VP2uGBTLh9jkXnl3AH_mXH7i4lAUD6qfHj0NL68AxhMmRMlgfYWowf-OuvYOaK&_nc_zt=23&_nc_ht=scontent.fkhh2-1.fna&_nc_gid=JCSggF4PCug25Woh-EV_GQ&oh=00_AfrAMobzb1WfJRhSMiOZw0Qf286F7hfb1jSBUE9t47hN3A&oe=696EF12C" alt="表演 1">
       <img src="https://scontent.fkhh2-1.fna.fbcdn.net/v/t39.30808-6/569031213_1350784263724662_2918019108222504846_n.jpg?stp=c185.0.1108.1108a_cp6_dst-jpg_s552x414_tt6&_nc_cat=105&ccb=1-7&_nc_sid=714c7a&_nc_ohc=9ww6zVKpQaQQ7kNvwGIy1CF&_nc_oc=Adk_YjyzUm_zfjY66xNYgEhFE0F_O33xD4Ndew_tpJh4K55dVDxmoGO0449AchpiyTFWHWpwwQpo3pcTrH8i39RG&_nc_zt=23&_nc_ht=scontent.fkhh2-1.fna&_nc_gid=WjMM-CeadxOJPu9eVwstmw&oh=00_AfqDJaacRRaE2KUSbI4lV1AXPoZZcn_iutHTQ7mAPEp5zA&oe=696EDE83" alt="表演 2">
        <img src="https://scontent.fkhh2-2.fna.fbcdn.net/v/t39.30808-6/570160419_1350776223725466_4692924232415241821_n.jpg?stp=c185.0.1108.1108a_cp6_dst-jpegr_s552x414_tt6&_nc_cat=101&ccb=1-7&_nc_sid=714c7a&_nc_ohc=E5Gq689gyf8Q7kNvwEdQui2&_nc_oc=Adnjm6nhTgpE0bzywVu6n9W1KwBmK6hwXrI01mCeE4oKgKQIcpeFMWIEbZH-sncpsiP-WZ7poFd24JqIqqkHalJk&_nc_zt=23&se=-1&_nc_ht=scontent.fkhh2-2.fna&_nc_gid=QG4RVZ5JkfPwDi6Rp9GMXg&oh=00_AforFycM8DfViB2PZWst0xhTBZLZjMI5qRXPVwGnG9uB8g&oe=696ED573" alt="表演 3">
@@ -798,6 +809,58 @@
 
 
     </div>
+    <div>
+      <section id="news" class="news">
+  <h2 class="section-title">最新消息</h2>
 
-    <!-- Taiwan Landmarks -->
-    <h3 style="margin-top: 80
+  <div class="news-list">
+    <article class="news-item">
+      <h3>校慶活動公告</h3>
+      <p>2026 年校慶系列活動正式展開，歡迎師生參加。</p>
+      <span class="date">2026-01-15</span>
+    </article>
+
+    <article class="news-item">
+      <h3>產學合作成果發表</h3>
+      <p>學生與企業合作專案成果展覽。</p>
+      <span class="date">2026-01-10</span>
+    </article>
+  </div>
+</section>
+</div>
+
+
+
+
+<div>
+      <section id="contact" class="cc">
+  <h2 class="section-title">聯絡我們</h2>
+
+  <div class="cc-list">
+    <article class="cc-item">
+      <p>姓名 廖智君</p>
+      <p>班級 建專訊三丁</p>
+      <span class="date">日期 2026/1/20</span>
+    </article>
+
+    <article class="cc-item">
+      <a href="mailto:tenemailcuaban@gmail.com">
+  📧 Gmail: triquan204@gmail.com
+</a> <br>
+<a href="https://www.facebook.com/tq.1510/" target="_blank">
+  🔵 Facebook
+  <br>
+  </a>
+  <a href="https://www.google.com/maps/place/No.+1,+Wanneng+Rd,+Shuishang+Township,+Chiayi+County,+608/@23.4311133,120.39082,17z/data=!3m1!4b1!4m6!3m5!1s0x346e911e352f695d:0x8fb2a8f40c10c923!8m2!3d23.4310788!4d120.3909258!16s%2Fg%2F11b8vdvq3l?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoKLDEwMDc5MjA2N0gBUAM%3D" target="_red"> 
+     地址：608台灣嘉義縣水上鄉萬能路1號
+    </a>
+  </a>
+      <p>電話號碼： 0979653021</p> 
+
+      <p>謝謝</p>
+    </article>
+  </div>
+</section>
+</div>
+
+   
